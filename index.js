@@ -41,7 +41,7 @@ addBtn.addEventListener('click',()=>{
             showItems();
         }
         else{
-            alert("Please Enter A Note");
+            alert("Please Enter A Valid Note");
         }
 })
 
