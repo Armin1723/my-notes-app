@@ -58,7 +58,7 @@ search.addEventListener('input',()=>{
     console.log("event fired");
     let cardNotes= document.getElementsByClassName('card');
     Array.from(cardNotes).forEach(function(element){
-        let cardTxt= element.getElementsByTagName("p")[0].innerText;
+        let cardTxt= element.getElementsByTagName("p")[0].innerText.toLowerCase;
         if(cardTxt.includes(searchTxt))
             element.style.display= "block";
         else
