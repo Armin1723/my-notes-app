@@ -13,12 +13,13 @@ showItems=()=>{
     }
     notes.innerHTML="";
     notesObj.forEach(function(element, index){
-        notes.innerHTML+=`
-                            <div class="card mx-3 my-3" style="width: 18rem ;">
-                            <div class="card-body">
-                                <h5 class="card-title">Note ${index+1}</h5>
-                                <p class="card-text">${element}</p>
-                                <button class="btn btn-primary" id="delBtn-${index}" onclick="deleteNote(this.id)">Delete Note</button>
+        notes.innerHTML+=`  <div class="col-md-4">
+                                <div class="card mx-3 my-3" style="width: 18rem ;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Note ${index+1}</h5>
+                                    <p class="card-text">${element}</p>
+                                    <button class="buttonhover " id="${index}" onclick="deleteNote(this.id)">X</button>
+                                </div>
                             </div> 
                         `
   })
@@ -26,7 +27,6 @@ showItems=()=>{
 showItems();
 
 addBtn.addEventListener('click',()=>{
-    // boot=false;
     let noteItems= localStorage.getItem('noteItems');
     if(!noteItems){
         notesObj=[];

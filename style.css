@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: radial-gradient(circle, transparent 20%, #eeffff 20%, #eeffff 80%, transparent 80%, transparent) 0% 0% / 32px 32px, radial-gradient(circle, transparent 20%, #eeffff 20%, #eeffff 80%, transparent 80%, transparent) 16px 16px / 32px 32px, linear-gradient(#d0e3cb 0.5px, transparent 0.5px) 0px -0.25px / 16px 16px, linear-gradient(90deg, #d0e3cb 0.5px, #eeffff 0.5px) -0.25px 0px / 16px 16px #eeffff;
+    background-color: #eeffff;
+}
+
+.navbar{
+    background:linear-gradient( #dff4f4, #eeffff);
+}
+
+#addBtn{
+    border: 1px solid #bfdada;
+}
+#addBtn:hover{
+    background-color: #e2f6f6;
+}
+
+.buttonhover{
+    float:right;
+    height: 5vh;
+    width:6vw;
+    border:1px solid #eeffff;
+    border-radius: 6px;
+    background: none;
+    font-size: 1.3rem;
+}
+.buttonhover:hover{
+    transition: 0.9s linear;
+    background-color: #daefef;
+}
+
+.card{
+    background: linear-gradient(#eeffff,rgb(255, 255, 255));
+    height: auto;
+}
+#note{
+    width: 100%;
+    min-height:130px;
+    padding-left: 10px;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    border: 1px solid #caf5f5;
+    border-radius: 15px;
+    background: linear-gradient(#f1f9f9, rgb(249, 250, 250));
+}
